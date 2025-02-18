@@ -9,7 +9,12 @@ export const about = (req, res) => {
   res.render("pages/default", {
     title: "About us",
     content: "We are a group of dinosaur enthusiasts",
-    team: ["T-Rex", "Velociraptor", "Stegosaurus"],
+    team: [
+      "T-Rex",
+      "Velociraptor",
+      "Stegosaurus",
+      "<strong>Premium</strong> Diplodocus",
+    ],
   });
 };
 export const contact = (req, res) => {
