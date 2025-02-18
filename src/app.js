@@ -24,6 +24,12 @@ app.get("/about", about);
 app.get("/contact", contact);
 app.get("/privacy", privacy);
 
+app.get("*", (req, res) => {
+  res.status(404).render("errors/404", {
+    layout: "layouts/error",
+  });
+});
+
 // start the server, listen on port defined in .env file
 app.listen(process.env.PORT, () => {
   // callback function that is called when the server starts
