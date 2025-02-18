@@ -15,6 +15,7 @@ export const home = (req, res) => {
     title: "Dinosaurs around the world",
     content: "Welcome to the world of dinosaurs",
     navItems,
+    secret: "abc123",
   });
 };
 export const about = (req, res) => {

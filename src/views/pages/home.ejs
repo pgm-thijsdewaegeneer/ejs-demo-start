@@ -10,13 +10,7 @@
 </head>
 <body>
 
-  <nav class="primary">
-      <% navItems.forEach(item => { %>
-          <a href="<%= item.url %>">
-            <%= item.label %>
-          </a>
-      <% }); %>
-  </nav>
+  <%- include('../partials/nav') %>
 
   <h1> <%= title %> </h1>
   <p> <%= content %> </p>
