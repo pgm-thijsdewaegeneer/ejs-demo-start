@@ -1,3 +1,7 @@
+/* 
+  todo 
+  render de person properties in de contact template
+*/
 export const person = {
   firstname: "Frederick",
   lastname: "Roegiers",
@@ -7,6 +11,7 @@ export const person = {
   },
 };
 
+/** ------------------------ **/
 export const dinosaurs = [
   {
     id: 1,

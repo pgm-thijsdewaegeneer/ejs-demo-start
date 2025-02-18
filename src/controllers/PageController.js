@@ -1,3 +1,5 @@
+import { person } from "../data/data.js";
+
 export const home = (req, res) => {
   // res.render("<NAAM VAN DE VIEW>", {<DATA NAAR DE VIEW>})
   res.render("pages/home", {
@@ -21,6 +23,7 @@ export const contact = (req, res) => {
   res.render("pages/contact", {
     title: "Contact",
     content: "Contact us at 09 233 40 89",
+    person,
   });
 };
 export const privacy = (req, res) => {
