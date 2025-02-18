@@ -9,6 +9,7 @@ export const about = (req, res) => {
   res.render("pages/default", {
     title: "About us",
     content: "We are a group of dinosaur enthusiasts",
+    team: ["T-Rex", "Velociraptor", "Stegosaurus"],
   });
 };
 export const contact = (req, res) => {
@@ -21,5 +22,6 @@ export const privacy = (req, res) => {
   res.render("pages/default", {
     title: "Privacy Policy",
     content: "Dinosaurs are protective of their privacy",
+    team: false,
   });
 };
