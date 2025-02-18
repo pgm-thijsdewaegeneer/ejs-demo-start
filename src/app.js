@@ -24,9 +24,10 @@ app.get("/about", about);
 app.get("/contact", contact);
 app.get("/privacy", privacy);
 
+// 404 page
 app.get("*", (req, res) => {
   res.status(404).render("errors/404", {
-    layout: "layouts/error",
+    layout: "layouts/error", // override the default layout
   });
 });
 
