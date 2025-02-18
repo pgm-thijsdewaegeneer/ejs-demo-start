@@ -1,3 +1,8 @@
+/**
+ *
+ * todo 1: render de person
+ */
+
 import { person } from "../data/data.js";
 
 export const home = (req, res) => {
