@@ -2,6 +2,8 @@
 import express from "express";
 import path from "path";
 
+import {home, about, contact, privacy} from "./controllers/page-controllers.js";
+
 // create an instance of express
 const app = express();
 
@@ -13,10 +15,17 @@ app.set("views", path.resolve("src", "views"));
 app.use(express.static("public"));
 
 // GET route to serve the index.html file
-app.get("/", (req, res) => {
-  res.render("home", {
-    title: "Dinosaurs are awesome!",
-    content: "Dinosaurs are a diverse group of reptiles of the clade Dinosaur"
+app.get("/", home);
+
+app.get("/about", about);
+
+app.get("/contact", contact);
+
+app.get("/privacy", privacy)
+
+app.get("*", (req, res) => {
+  res.status(404).render("errors/404.ejs", {
+    layout: "layouts/errors",
   });
 });
 

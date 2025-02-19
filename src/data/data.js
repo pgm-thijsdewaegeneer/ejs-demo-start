@@ -7,6 +7,7 @@ export const person = {
   },
 };
 
+/** ------------------------ **/
 export const dinosaurs = [
   {
     id: 1,
@@ -91,7 +92,15 @@ export const navItems = [
     label: "Dinosaurs",
   },
   {
+    url: "/about",
+    label: "About",
+  },
+  {
     url: "/contact",
     label: "Contact",
+  },
+  {
+    url: "/privacy",
+    label: "Privacy",
   },
 ];
